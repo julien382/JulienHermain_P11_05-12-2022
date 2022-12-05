@@ -12,6 +12,22 @@ const Card = () => {
                 <CardTitle title="Bruxelles"/>
                 
             </div>
+            <div className='card'>
+                <CardTitle title="Paris"/>
+                
+            </div>
+            <div className='card'>
+                <CardTitle title="Londres"/>
+                
+            </div>
+            <div className='card'>
+                <CardTitle title="Tokyo"/>
+                
+            </div>
+            <div className='card'>
+                <CardTitle title="Madrid"/>
+                
+            </div>
 
         </div>
     )

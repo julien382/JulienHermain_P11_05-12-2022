@@ -1,7 +1,18 @@
+.cards{
+    padding: 100px;
+    padding-top: 56px;
+    padding-bottom: 43px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .card{
     position: relative;
     width: 340px;
     height: 340px;
     border-radius: 10px;
     background-color: #FF6060;
+    box-shadow: inset 0px -100px 100px rgba(0, 0, 0, 0.438);
+    margin: 25px;
 }

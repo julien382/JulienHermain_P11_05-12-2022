@@ -1,7 +1,9 @@
 .cardTitle{
     position: absolute;
+    width: 90px;
     bottom: 0px;
     font-size: 18px;
     color: white;
-    background-color: red;
+    margin: 20px;
+    
 }
