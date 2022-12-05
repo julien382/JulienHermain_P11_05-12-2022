@@ -1,10 +1,18 @@
 import './Card.css'
+import CardTitle from "../CardTitle/CardTitle"
 
 const Card = () => {
     return (
-        <div className='card'>
-            <CardTitle title="location"/>
-            
+        <div className='cards'>
+            <div className='card'>
+                <CardTitle title="Titre de la location"/>
+                
+            </div>
+            <div className='card'>
+                <CardTitle title="Bruxelles"/>
+                
+            </div>
+
         </div>
     )
 }

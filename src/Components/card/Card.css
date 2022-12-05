@@ -1,15 +1,7 @@
-import './Banner.css'
-import Logo from '../Logo/Logo'
-import Menu from '../Menu/Menu'
-
-const Banner = () => {
-    return (
-        <div className='banner'>
-            <Logo />
-            <Menu />
-            
-        </div>
-    )
+.card{
+    position: relative;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    background-color: #FF6060;
 }
-
-export default Banner

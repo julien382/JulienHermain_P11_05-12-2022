@@ -1,0 +1,7 @@
+.cardTitle{
+    position: absolute;
+    bottom: 0px;
+    font-size: 18px;
+    color: white;
+    background-color: red;
+}
