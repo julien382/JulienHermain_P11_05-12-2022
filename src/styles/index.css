@@ -9,7 +9,7 @@ body {
 
 #appContainer{
   width: 100%;
-  max-width: 1200px;
+  max-width: 1720px;
   margin: auto;
-  padding: 15px;
+  padding: 40px;
 }
