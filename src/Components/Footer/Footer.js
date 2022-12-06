@@ -1,15 +1,15 @@
-import './Banner.css'
+import './Footer.css'
 import Logo from '../Logo/Logo'
-import Menu from '../Menu/Menu'
+import Copyright from '../Copyright/Copyright'
 
-const Banner = () => {
+const Footer = () => {
     return (
-        <div className='banner'>
+        <div className='footer'>
             <Logo />
-            <Menu />
+            <Copyright title="© 2020 Kasa. All rights reserved"/>
             
         </div>
     )
 }
 
-export default Banner
+export default Footer
