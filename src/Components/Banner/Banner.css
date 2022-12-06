@@ -8,11 +8,17 @@
     justify-content: center;
     margin-top: 63px;
     margin-bottom: 18px;
-    background-image: url('../../assets/montagne.png');
-    background-size: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.bannerImage{
+    width: 100%;
+    filter:brightness(70%);
 }
 
 .bannerTitle{
+    position: absolute;
     font-size: 48px;
     color: white;
 }
