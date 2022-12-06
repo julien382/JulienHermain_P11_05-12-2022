@@ -1,5 +1,6 @@
 import './Card.css'
 import CardTitle from "../CardTitle/CardTitle"
+import data from '../../data/data.json'
 
 const Card = () => {
     return (
@@ -25,7 +26,9 @@ const Card = () => {
                 
             </div>
             <div className='card'>
-                <CardTitle title="Madrid"/>
+                {data.map(logement => (
+                    <CardTitle title={logement.title}/>
+                ))}
                 
             </div>
 
