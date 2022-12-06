@@ -1,13 +1,9 @@
 import './Banner.css'
-import Logo from '../Logo/Logo'
-import Menu from '../Menu/Menu'
 
 const Banner = () => {
     return (
         <div className='banner'>
-            <Logo />
-            <Menu />
-            
+            <h1 className="bannerTitle">Chez vous, partout et ailleurs</h1>
         </div>
     )
 }

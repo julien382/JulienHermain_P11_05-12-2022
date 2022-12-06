@@ -1,18 +1,18 @@
 import '../styles/index.css';
 import '../styles/reset.css';
-import Banner from './Banner/Banner'
+import Header from './Header/Header'
 import Card from './Card/Card'
-import SectionImage from './SectionImage/SectionImage';
+import Banner from './Banner/Banner';
 import Footer from './Footer/Footer';
 
 function App() {
     return (
         <div>
             <div id='app'>
+                <Header />
                 <Banner />
-                <SectionImage />
                 <Card />
-                
+
             </div>
             <div>
                 <Footer />
