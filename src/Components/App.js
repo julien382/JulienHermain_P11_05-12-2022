@@ -1,10 +1,15 @@
 import '../styles/index.css';
 import '../styles/reset.css';
-import Footer from './Footer/Footer';
 import {Routes, Route} from "react-router-dom"
-import Home from '../pages/Home/index';
-import APropos from '../pages/APropos/index';
+
 import Header from './Header/Header';
+
+import Home from '../pages/Home/index';
+import FicheLogement from '../pages/FicheLogement';
+import APropos from '../pages/APropos/index';
+import Error from '../pages/Error';
+
+import Footer from './Footer/Footer';
 
 function App() {
     return (
@@ -13,8 +18,8 @@ function App() {
                 <Header />
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    {/*<Route path="/FicheLogement" element={<FicheLogement />} />
-                    <Route path="/Error" element={<Error />} />*/}
+                    <Route path="/FicheLogement" element={<FicheLogement />} />
+                    <Route path="/Error" element={<Error />} />
                     <Route path="/APropos" element={<APropos />} />
                 </Routes>
 
