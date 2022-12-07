@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
-        <div className='footer'>
+        <footer className='footer'>
             <Link to="/">
                 <img className="logoBlanc" src={logoBlanc} alt="logo" />
             
             </Link>
             <Copyright title="© 2020 Kasa. All rights reserved"/>
             
-        </div>
+        </footer>
     )
 }
 
