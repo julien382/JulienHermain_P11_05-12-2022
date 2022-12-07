@@ -1,10 +1,13 @@
+import './APropos.css'
+import Banner from '../../Components/Banner/Banner.js'
 
-const Home = () => {
+const APropos = () => {
     return (
-        <div>
+        <div className='pageAPropos'>
+            <Banner />
             
         </div>
     )
 }
 
-export default Home
+export default APropos
