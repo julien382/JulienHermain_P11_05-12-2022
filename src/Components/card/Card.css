@@ -16,3 +16,11 @@
     box-shadow: inset 0px -100px 100px rgba(0, 0, 0, 0.438);
     margin: 25px;
 }
+
+@media only screen and (max-width: 767px)
+{
+    .cards{
+        padding:0%;
+    }
+
+}
