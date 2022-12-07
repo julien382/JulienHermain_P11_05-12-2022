@@ -1,5 +1,5 @@
-import Banner from '../../Components/Banner/Banner.js'
-import Card from '../../Components/Card/Card.js'
+import Banner from '../../Components/Banner/Banner.jsx'
+import Card from '../../Components/Card/Card.jsx'
 
 const Home = () => {
     return (

@@ -1,5 +1,5 @@
 import './FicheLogement.css'
-import Banner from '../../Components/Banner/Banner.js'
+import Banner from '../../Components/Banner/Banner.jsx'
 
 const FicheLogement = () => {
     return (
