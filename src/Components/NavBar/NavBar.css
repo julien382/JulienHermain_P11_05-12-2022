@@ -1,15 +1,15 @@
-.menu ul{
+.navBar ul{
     list-style: none;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.menu ul li{
+.navBar ul li{
     display: block;
 }
 
-.menu ul li a{
+.navBar ul li a{
     font-size: 24px;
     color: #FF6060;
     margin-left: 57px;

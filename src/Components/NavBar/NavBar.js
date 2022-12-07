@@ -1,9 +1,9 @@
-import './Menu.css'
+import './NavBar.css'
 import {Link} from "react-router-dom"
 
-const Menu = () => {
+const NavBar = () => {
     return (
-        <nav className='menu'>
+        <nav className='navBar'>
             <ul>
                 <li>
                     <Link to="/">Accueil</Link>
@@ -17,4 +17,4 @@ const Menu = () => {
     )
 }
 
-export default Menu
+export default NavBar
