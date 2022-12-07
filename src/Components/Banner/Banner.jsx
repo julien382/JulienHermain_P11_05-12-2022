@@ -1,11 +1,10 @@
 import './Banner.css'
-import bannerImage from "../../assets/montagne.png"
 
-const Banner = () => {
+const Banner = ({img, title}) => {
     return (
         <div className='banner'>
-            <img src={bannerImage} alt='bannerImage' className='bannerImage' />
-            <h1 className="bannerTitle">Chez vous, partout et ailleurs</h1>
+            <img src={img} alt='bannerImage' className='bannerImage' />
+            <h1 className="bannerTitle">{title}</h1>
         </div>
     )
 }
