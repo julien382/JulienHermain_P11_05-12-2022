@@ -31,6 +31,29 @@
         margin:0;
         margin-top: 20px;
     }
+    /* --- Error 404 --- */
+
+    .sectionError{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .error404{
+        font-size: 96px;
+        margin-top: 195px;
+    }
+    
+    .messageError{
+        font-size: 11px;
+        margin-top: 66px;
+    }
+    
+    .errorBackHome{
+        font-size: 14px;
+        margin-top: 133px;
+        margin-bottom: 169px;
+    }
 
     /* --- Footer --- */
 

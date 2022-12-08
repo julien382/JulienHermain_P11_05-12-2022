@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import './Error.css'
+import '../../styles/mediaQueries.css'
 
 const Error = () => {
     return (
