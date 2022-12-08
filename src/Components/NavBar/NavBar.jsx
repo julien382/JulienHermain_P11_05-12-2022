@@ -1,4 +1,5 @@
 import './NavBar.css'
+import '../../styles/mediaQueries.css'
 import {Link} from "react-router-dom"
 
 const NavBar = () => {
