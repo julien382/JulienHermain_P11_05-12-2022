@@ -8,11 +8,33 @@
 }
 
 .card{
-    position: relative;
     width: 340px;
     height: 340px;
     border-radius: 10px;
     background-color: #FF6060;
     box-shadow: inset 0px -100px 100px rgba(0, 0, 0, 0.438);
     margin: 25px;
+    overflow: hidden;
+}
+
+.cardImage{
+    box-shadow: inset 0px -100px 100px rgba(0, 0, 0, 0.438);
+    position: relative;
+    width: 340px;
+    height: 340px;
+    overflow: hidden;
+}
+
+.cardImage img{
+    position: absolute;
+    max-height: 100%;   
+}
+
+.cardTitle{
+    position: absolute;
+    width: 200px;
+    bottom: 0px;
+    font-size: 18px;
+    color: white;
+    margin: 20px;
 }
