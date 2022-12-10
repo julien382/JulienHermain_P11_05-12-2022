@@ -18,14 +18,5 @@ const Slider = () => {
         </div>
     )
 }
-/*
-<Link className='card' to={`FicheLogement/${logement.id}`}>
-                    <article>
-                        <div className="cardImage">
-                            <img src={logement.cover} alt="logement" />
-                        </div>
-                        <h2 className='cardTitle'>{logement.title}</h2>
-                    </article>
-                </Link>*/
 
 export default Slider
