@@ -9,7 +9,6 @@ const Home = () => {
         <div>
             <Banner img={montagne} title="Chez vous, partout et ailleurs"/>
             <Tag />
-            <CardDescription />
             <Card />
         </div>
     )
