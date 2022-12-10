@@ -1,12 +1,13 @@
 import './FicheLogement.css'
-import Banner from '../../Components/Banner/Banner.jsx'
+import CardDescription from '../../Components/CardDescription/CardDescription'
 
 const FicheLogement = () => {
     return (
         <div className='ficheLogement'>
-            <Banner />
-            <Banner />
-            
+            <div className='cardsDescription'>
+                <CardDescription />
+                <CardDescription />
+            </div>
         </div>
     )
 }
