@@ -1,0 +1,39 @@
+.cardsDescription{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cardDescription{
+    width: 582px;
+}
+
+.blocCardDescriptionTitle{
+    background-color: #FF6060;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.cardDescriptionTitle{
+    font-size: 18px;
+    color: white;
+    margin-left: 20px;
+}
+
+.blocCardDescriptionTexte{
+    position: absolute;
+    top: 70%;
+    z-index: -1;
+    padding-top: 10px;
+    background-color: #F6F6F6;
+    border-radius: 10px;
+}
+
+.cardDescriptionTexte{
+    color: #FF6060;
+    padding: 20px;
+    font-size: 18px;
+}
