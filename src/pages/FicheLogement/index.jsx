@@ -2,11 +2,12 @@ import './FicheLogement.css'
 import CardDescription from '../../Components/CardDescription/CardDescription'
 import Tag from '../../Components/Tag/Tag'
 import Rating from '../../Components/Rating/Rating'
+import Slider from '../../Components/Slider/Slider'
 
 const FicheLogement = () => {
     return (
         <div className='ficheLogement'>
-            <img></img>
+            <Slider />
             <div className='containerLocationProfile'>
                 <div className='containerLocation'>
                     <h2 className='locationName'>Cozy loft on the Canal Saint-Martin</h2>
