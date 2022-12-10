@@ -1,13 +1,13 @@
-
 /*  ---containerLocationProfile--- */
 .containerLocationProfile{
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     color: #FF6060;
 }
 
 .containerLocation{
-
+    
 }
 
 .locationName{
@@ -19,13 +19,12 @@
     margin-top: 10px;
 }
 
-/*  ---profile--- */
+/*  profile */
 .profile{
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: end;
-    margin-top: 20px;
 }
 
 .profileName{
@@ -39,10 +38,19 @@
     border-radius: 100%;
     margin-left: 10px;
 }
+
+/*  ---containerTagRaiting--- */
+.containerTagRaiting{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
 /*  ---CardsDescription--- */
 .cardsDescription{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 24px;
+    margin-top: 20px;
 }

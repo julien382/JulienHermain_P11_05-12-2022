@@ -1,6 +1,7 @@
 import './FicheLogement.css'
 import CardDescription from '../../Components/CardDescription/CardDescription'
 import Tag from '../../Components/Tag/Tag'
+import Rating from '../../Components/Rating/Rating'
 
 const FicheLogement = () => {
     return (
@@ -20,7 +21,7 @@ const FicheLogement = () => {
             </div>
             <div className='containerTagRaiting'>
                 <Tag />
-                <rating></rating>
+                <Rating />
 
             </div>
             <div className='cardsDescription'>
