@@ -8,6 +8,7 @@ const FicheLogement = () => {
     return (
         <div className='ficheLogement'>
             <Slider />
+            
             <div className='containerLocationProfile'>
                 <div className='containerLocation'>
                     <h2 className='locationName'>Cozy loft on the Canal Saint-Martin</h2>

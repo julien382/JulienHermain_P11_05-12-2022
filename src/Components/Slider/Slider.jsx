@@ -8,8 +8,8 @@ const Slider = () => {
 
     return (
         <div className='Slider'>
-            {data.map((logement) => (
-                <div className="cardImage">
+            {data.map((logement, i) => (
+                <div key={i} className="cardImage">
                     if ({logement.id} == {finUrl}) {
                         <img src={logement.pictures} alt="logement" />
                     }
