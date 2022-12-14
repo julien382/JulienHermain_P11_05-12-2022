@@ -1,18 +1,21 @@
 import './Slider.css'
 import '../../styles/mediaQueries.css'
 import data from '../../data/data.json'
+import { useParams } from 'react-router-dom'
 
 const Slider = () => {
-    const url = window.location.href
-    const finUrl = url.split('/').pop()
+    const {id} = useParams()
+    console.log(id);
 
     return (
         <div className='Slider'>
             {data.map((logement, i) => (
                 <div key={i} className="cardImage">
-                    if ({logement.id} == {finUrl}) {
+
+                    {(logement.id === id) && 
                         <img src={logement.pictures} alt="logement" />
                     }
+
                 </div>
             ))}
         </div>
