@@ -1,0 +1,12 @@
+.ppImage{
+    width: 64px;
+    height: 64px;
+    background-color: #C4C4C4;
+    border-radius: 100%;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+.ppImage > img{
+    height: 100%;
+}

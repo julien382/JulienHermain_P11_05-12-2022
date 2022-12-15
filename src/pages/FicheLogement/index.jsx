@@ -3,6 +3,7 @@ import CardDescription from '../../Components/CardDescription/CardDescription'
 import Tag from '../../Components/Tag/Tag'
 import Rating from '../../Components/Rating/Rating'
 import Slider from '../../Components/Slider/Slider'
+import PP from '../../Components/PP/PP'
 
 const FicheLogement = () => {
     return (
@@ -16,9 +17,7 @@ const FicheLogement = () => {
                 </div>
                 <div className='profile'>
                     <h3 className='profileName'>Alexandre <br></br> Dumas</h3>
-                    <div className='profilePicture'>
-                        <img></img>
-                    </div>
+                    <PP />
                 </div>
             </div>
             <div className='containerTagRaiting'>
