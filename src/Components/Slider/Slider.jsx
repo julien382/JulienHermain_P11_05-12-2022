@@ -9,15 +9,22 @@ const Slider = () => {
 
     return (
         <div className='Slider'>
-            {data.map((logement, i) => (
-                <div key={i} className="cardImage">
+            <div  className="cardImage">
+                {data.map((logement, i) => (
+
+                    <>
 
                     {(logement.id === id) && 
-                        <img src={logement.pictures} alt="logement" />
-                    }
 
-                </div>
-            ))}
+                        <img key={i} src={logement.host.picture} alt="logement" />
+
+                    }
+                    {console.log(logement.id)}
+                    
+                    </>
+
+                ))}
+            </div>
         </div>
     )
 }
