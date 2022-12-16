@@ -30,9 +30,7 @@ const FicheLogement = () => {
                             <h3 className='location'>{logement.location}</h3>
                         </div>
                         <div className='profile'>
-
                             <h3 className='profileName' key={i}  alt="pictures">{logement.host.name}</h3>
-
                             <PP />
                         </div>
                     </div>
