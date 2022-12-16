@@ -36,7 +36,7 @@ const FicheLogement = () => {
                     </div>
                     <div className='containerTagRaiting'>
                         <Tag />
-                        <Rating />
+                        <Rating nbrStars={logement.rating}/>
 
                     </div>
                     <div className='cardsDescription'>
