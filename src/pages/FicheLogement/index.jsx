@@ -26,8 +26,8 @@ const FicheLogement = () => {
                     
                     <div className='containerLocationProfile'>
                         <div className='containerLocation'>
-                            <h2 className='locationName'>Cozy loft on the Canal Saint-Martin</h2>
-                            <h3 className='location'>Paris, Île-de-France</h3>
+                            <h2 className='locationName'>{logement.title}</h2>
+                            <h3 className='location'>{logement.location}</h3>
                         </div>
                         <div className='profile'>
 
@@ -42,8 +42,8 @@ const FicheLogement = () => {
 
                     </div>
                     <div className='cardsDescription'>
-                        <CardDescription title="Description" text="Vous serez à 50m du canal Saint-martin où vous pourrez pique-niquer l'été et à côté de nombreux bars et restaurants. Au cœur de Paris avec 5 lignes de métro et de nombreux bus. Logement parfait pour les voyageurs en solo et les voyageurs d'affaires. Vous êtes à1 station de la gare de l'est (7 minutes à pied)."/>
-                        <CardDescription title="Equipements" text="test"/>
+                        <CardDescription title="Description" text={logement.description}/>
+                        <CardDescription title="Equipements" text={logement.equipments}/>
 
                     </div>
                 </>
