@@ -15,7 +15,14 @@ const Slider = () => {
 
                     {(logement.id === id) && 
 
-                        <img key={i} src={logement.pictures} alt="pictures" />
+                        <>
+                        {logement.pictures.map((picture, id) => (
+
+                            <img key={id} src={picture} alt="pictures" />
+
+                        ))}
+                        
+                        </>
 
                     }
                     
