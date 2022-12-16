@@ -4,8 +4,14 @@ import Tag from '../../Components/Tag/Tag'
 import Rating from '../../Components/Rating/Rating'
 import Slider from '../../Components/Slider/Slider'
 import PP from '../../Components/PP/PP'
+import data from '../../data/data.json'
+import { useParams } from 'react-router-dom'
+
 
 const FicheLogement = () => {
+    const {id} = useParams()
+
+
     return (
         <div className='ficheLogement'>
             <Slider />
@@ -16,7 +22,19 @@ const FicheLogement = () => {
                     <h3 className='location'>Paris, Île-de-France</h3>
                 </div>
                 <div className='profile'>
-                    <h3 className='profileName'>Alexandre <br></br> Dumas</h3>
+                {data.map((logement, i) => (
+
+                <>
+
+                {(logement.id === id) && 
+
+                    <h3 className='profileName' key={i}  alt="pictures">{logement.host.name}</h3>
+
+                }
+
+                </>
+
+                ))}
                     <PP />
                 </div>
             </div>

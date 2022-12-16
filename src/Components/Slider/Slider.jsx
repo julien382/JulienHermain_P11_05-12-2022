@@ -5,7 +5,6 @@ import { useParams } from 'react-router-dom'
 
 const Slider = () => {
     const {id} = useParams()
-    console.log(id);
 
     return (
         <div className='Slider'>
@@ -16,10 +15,9 @@ const Slider = () => {
 
                     {(logement.id === id) && 
 
-                        <img key={i} src={logement.host.picture} alt="logement" />
+                        <img key={i} src={logement.pictures} alt="pictures" />
 
                     }
-                    {console.log(logement.id)}
                     
                     </>
 

@@ -9,13 +9,13 @@ const PP = () => {
     return (
         <div className='PP'>
             <div  className="ppImage">
-                {data.map((ppPicture, i) => (
+                {data.map((logement, i) => (
 
                     <>
 
-                    {(ppPicture.id === id) && 
+                    {(logement.id === id) && 
 
-                        <img key={i} src={ppPicture.host.picture} alt="ppPicture" />
+                        <img key={i} src={logement.host.picture} alt="ppPicture" />
 
                     }
                     
