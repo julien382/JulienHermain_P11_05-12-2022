@@ -2,6 +2,7 @@ import './APropos.css'
 import Banner from '../../Components/Banner/Banner.jsx'
 import montagneNeige from "../../assets/montagneNeige.png"
 import CardDescription from '../../Components/CardDescription/CardDescription'
+import aboutData from '../../data/aboutData.json'
 
 const APropos = () => {
     return (
@@ -9,8 +10,12 @@ const APropos = () => {
             <Banner img={montagneNeige}/>
 
             <div className='aProposCardsDescription'> 
-                <CardDescription title="Equipements" text="test"/>
-                <CardDescription title="Equipements" text="test"/>
+
+                {aboutData.map((dataDescription, i) => (
+
+                    <CardDescription title={dataDescription.title} text={dataDescription.text}/>
+
+                ))}
             </div>
             
         </div>
