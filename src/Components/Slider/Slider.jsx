@@ -8,17 +8,17 @@ const Slider = () => {
 
     return (
         <div className='Slider'>
-            <div  className="cardImage">
-                {data.map((logement, i) => (
+            <div  className="sliderImage">
+                {data.map((logement) => (
 
                     <>
 
                     {(logement.id === id) && 
 
                         <>
-                        {logement.pictures.map((picture, id) => (
+                        {logement.pictures.map((picture) => (
 
-                            <img key={id} src={picture} alt="pictures" />
+                            <img key={logement.id} src={picture} alt="sliderPicture" />
 
                         ))}
                         
