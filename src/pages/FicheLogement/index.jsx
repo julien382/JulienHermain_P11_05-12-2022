@@ -22,7 +22,7 @@ const FicheLogement = () => {
             {(logement.id === id) && 
 
                 <>
-                    <Slider />
+                    <Slider allPictures={logement.pictures}/>
                     
                     <div className='containerLocationProfile'>
                         <div className='containerLocation'>
