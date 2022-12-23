@@ -1,6 +1,5 @@
 import '../styles/reset.css';
 import '../styles/index.css';
-import '../styles/mediaQueries.css';
 import {Routes, Route} from "react-router-dom"
 
 import Header from './Header/Header';

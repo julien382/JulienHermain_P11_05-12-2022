@@ -1,5 +1,4 @@
 import './CardDescription.css'
-import '../../styles/mediaQueries.css'
 import arrow from "../../assets/arrow.svg"
 import { useState } from 'react'
 

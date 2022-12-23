@@ -1,5 +1,4 @@
 import './Copyright.css'
-import '../../styles/mediaQueries.css'
 
 const Copyright = ({title}) => {
     return (

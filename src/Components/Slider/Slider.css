@@ -1,9 +1,10 @@
 .Slider{
     position: relative;
     height: 415px;
-    width: 1240px;
+    width: 100%;
     overflow: hidden;
     border-radius: 25px;
+    margin-top: 25px;
 }
 
 .slide{
@@ -22,8 +23,12 @@
     transform: translateY(-50%);
 }
 
+.slider__arrowLeft{
+    left: 24px;
+}
+
 .slider__arrowRight{
-    right: 0;
+    right: 24px;
 }
 
 .active{
@@ -32,7 +37,8 @@
 
 .compteur{
     position: absolute;
-    bottom: 0;
+    bottom: 24px;
     left: 50%;
     transform: translateX(50%);
+    color: white;
 }

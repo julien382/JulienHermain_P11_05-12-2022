@@ -1,5 +1,4 @@
 import './Card.css'
-import '../../styles/mediaQueries.css'
 import data from '../../data/data.json'
 import {Link} from "react-router-dom"
 

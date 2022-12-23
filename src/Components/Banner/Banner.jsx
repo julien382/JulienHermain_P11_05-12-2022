@@ -1,5 +1,4 @@
 import './Banner.css'
-import '../../styles/mediaQueries.css'
 
 const Banner = ({img, title}) => {
     return (

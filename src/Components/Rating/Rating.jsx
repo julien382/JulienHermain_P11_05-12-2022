@@ -1,5 +1,4 @@
 import './Rating.css'
-import '../../styles/mediaQueries.css'
 import star from "../../assets/star.svg"
 import starColor from "../../assets/starFull.svg"
 

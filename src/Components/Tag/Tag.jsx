@@ -1,5 +1,4 @@
 import './Tag.css'
-import '../../styles/mediaQueries.css'
 import data from '../../data/data.json'
 import { useParams } from 'react-router-dom'
 
