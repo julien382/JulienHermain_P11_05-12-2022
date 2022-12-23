@@ -25,10 +25,11 @@
 
 @media only screen and (max-width: 680px)
 {
-    /* --- Main --- */
     .banner{
         justify-content: flex-start;
         height: 111px;
+        margin-top: 20px;
+        margin-bottom: 0px;
     }
     
     .bannerTitle{

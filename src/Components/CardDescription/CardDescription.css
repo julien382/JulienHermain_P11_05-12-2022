@@ -44,3 +44,29 @@
 .rotateArrow{
     transform: rotate(180deg);
 }
+
+@media only screen and (max-width: 680px)
+{
+    .blocCardDescriptionTitle{
+        height: 30px;
+    }
+    
+    .blocCardDescriptionTitle > img{
+        margin-right: 10px;
+    }
+    
+    .cardDescriptionTitle{
+        font-size: 13px;
+        margin-left: 12px;
+    }
+    
+    .blocCardDescriptionTexte{
+        padding-top: 8px;
+    }
+    
+    .cardDescriptionTexte{
+        padding: 10px;
+        font-size: 12px;
+    }
+
+}
