@@ -22,3 +22,18 @@
     font-size: 48px;
     color: white;
 }
+
+@media only screen and (max-width: 680px)
+{
+    /* --- Main --- */
+    .banner{
+        justify-content: flex-start;
+        height: 111px;
+    }
+    
+    .bannerTitle{
+        margin-left: 16px;
+        font-size: 24px;
+    }
+
+}
