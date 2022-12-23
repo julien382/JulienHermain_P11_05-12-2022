@@ -1,11 +1,3 @@
-.ficheLogement > img{
-    width: 100%;
-    height: 415px;
-    background-color: rgb(255, 137, 137);
-    border-radius: 25px;
-    margin-top: 25px;
-}
-
 /*  ---containerLocationProfile--- */
 .containerLocationProfile{
     display: flex;
@@ -66,4 +58,53 @@
 
 .cardsDescription > div{
     width: 45%;
+}
+
+@media only screen and (max-width: 680px)
+{
+    /*  ---containerLocationProfile--- */
+    .containerLocationProfile{
+        margin-top: 20px;
+    }
+    /*
+    .containerLocation{
+        
+    }*/
+
+    .locationName{
+        font-size: 18px;
+    }
+
+    .location{
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    /*  profile */
+    .profileName{
+        font-size: 12px;
+    }
+
+    .profilePicture{
+        width: 32px;
+        height: 32px;
+    }
+
+    /*  ---containerTagRaiting--- */
+    .containerTagRaiting{
+        margin-top: 20px;
+    }
+
+    /*  ---CardsDescription--- */
+    .cardsDescription{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .cardsDescription > div{
+        width: 100%;
+    }
+
 }
