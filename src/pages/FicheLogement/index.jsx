@@ -11,46 +11,33 @@ import { useParams } from 'react-router-dom'
 const FicheLogement = () => {
     const {id} = useParams()
 
+    const logGoodId = data.find(logement => logement.id === id)
+
 
     return (
         <div className='ficheLogement'>
 
-            {data.map((logement, i) => (
-
-            <>
-
-            {(logement.id === id) && 
-
-                <>
-                    <Slider allPictures={logement.pictures}/>
+            <Slider idLogement={logGoodId.pictures} allPictures={logGoodId.pictures}/>
                     
-                    <div className='containerLocationProfile'>
-                        <div className='containerLocation'>
-                            <h2 className='locationName'>{logement.title}</h2>
-                            <h3 className='location'>{logement.location}</h3>
-                        </div>
-                        <div className='profile'>
-                            <h3 className='profileName' key={i}  alt="pictures">{logement.host.name}</h3>
-                            <PP />
-                        </div>
-                    </div>
-                    <div className='containerTagRaiting'>
-                        <Tag />
-                        <Rating nbrStars={logement.rating}/>
+            <div className='containerLocationProfile'>
+                <div className='containerLocation'>
+                    <h2 className='locationName'>{logGoodId.title}</h2>
+                    <h3 className='location'>{logGoodId.location}</h3>
+                </div>
+                <div className='profile'>
+                    <h3 className='profileName' alt="pictures">{logGoodId.host.name}</h3>
+                    <PP />
+                </div>
+            </div>
+            <div className='containerTagRaiting'>
+                <Tag />
+                <Rating nbrStars={logGoodId.rating}/>
 
-                    </div>
-                    <div className='cardsDescription'>
-                        <CardDescription title="Description" text={logement.description}/>
-                        <CardDescription title="Equipements" text={logement.equipments}/>
-
-                    </div>
-                </>
-
-            }
-
-            </>
-
-            ))}
+            </div>
+            <div className='cardsDescription'>
+                <CardDescription title="Description" text={logGoodId.description}/>
+                <CardDescription title="Equipements" text={logGoodId.equipments}/>
+            </div>
                 
         </div>
     )
