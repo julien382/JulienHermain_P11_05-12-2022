@@ -10,7 +10,7 @@ import { useParams } from 'react-router-dom'
 
 const FicheLogement = () => {
     const {id} = useParams()
-    
+
     const logementGoodId = data.find(logement => logement.id === id)
 
 
@@ -30,7 +30,7 @@ const FicheLogement = () => {
                 <div className='containerProfileRaiting'>
                     <div className='profile'>
                         <h3 className='profileName' alt="pictures">{logementGoodId.host.name}</h3>
-                        <PP />
+                        <PP idLogement={logementGoodId}/>
                     </div>
                     <Rating nbrStars={logementGoodId.rating}/>
                 </div>
