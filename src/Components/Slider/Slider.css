@@ -5,6 +5,7 @@
     overflow: hidden;
     border-radius: 25px;
     margin-top: 25px;
+    background-color: #FF6060;
 }
 
 .slide{
@@ -41,4 +42,47 @@
     left: 50%;
     transform: translateX(50%);
     color: white;
+}
+
+@media only screen and (max-width: 680px)
+{
+    .Slider{
+        height: 255px;
+        width: 100%;
+        border-radius: 10px;
+        background-color: #FF6060;
+    } 
+    
+    .slide > img{
+        max-width: 100%;
+    }
+    
+    .slider__arrowLeft, .slider__arrowRight{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .slider__arrowLeft{
+        left: 24px;
+    }
+    
+    .slider__arrowRight{
+        right: 24px;
+    }
+
+    .slider__arrowLeft > svg{
+        width: 12px;
+        height: 20px;
+    }
+
+    .slider__arrowRight > svg{
+        width: 12px;
+        height: 20px;
+    }
+    
+    .compteur{
+        display: none;
+    }
+
 }
