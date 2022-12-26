@@ -13,7 +13,7 @@ const APropos = () => {
 
                 {aboutData.map((dataDescription, i) => (
 
-                    <CardDescription title={dataDescription.title} text={dataDescription.text}/>
+                    <CardDescription key={i} title={dataDescription.title} text={dataDescription.text}/>
 
                 ))}
             </div>
