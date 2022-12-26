@@ -4,8 +4,8 @@ import starColor from "../../assets/starFull.svg"
 
 const Rating = (nbrStars) => {
 
-    const starEmpty = <img src={star} alt="Etoile vide" />;
-    const starFull = <img src={starColor} alt="Etoile complete" />;
+    const starEmpty = <img className='star' src={star} alt="Etoile vide" />;
+    const starFull = <img className='star' src={starColor} alt="Etoile complete" />;
       
     const starsArray = [];
 

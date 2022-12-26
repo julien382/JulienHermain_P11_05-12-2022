@@ -1,0 +1,7 @@
+@media only screen and (max-width: 680px)
+{
+    .star{
+        height: 15px;
+        width: 15px;
+    }
+}

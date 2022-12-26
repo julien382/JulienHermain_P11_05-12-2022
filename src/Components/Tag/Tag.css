@@ -18,3 +18,16 @@
     font-size: 14px;
     color: white;
 }
+
+@media only screen and (max-width: 680px)
+{
+    .tag{
+        height: 18px;
+        width: 84px;
+    }
+    
+    .tagTitle{
+        font-size: 10px;
+    }
+
+}
