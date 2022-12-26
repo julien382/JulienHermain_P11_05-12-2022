@@ -10,34 +10,34 @@ import { useParams } from 'react-router-dom'
 
 const FicheLogement = () => {
     const {id} = useParams()
-
-    const logGoodId = data.find(logement => logement.id === id)
+    
+    const logementGoodId = data.find(logement => logement.id === id)
 
 
     return (
         <div className='ficheLogement'>
 
-            <Slider idLogement={logGoodId.pictures} allPictures={logGoodId.pictures}/>
+            <Slider idLogement={logementGoodId.pictures} allPictures={logementGoodId.pictures}/>
 
             <div className='containerInformation'>    
                 <div className='containerLocationTag'>
                     <div className='containerLocation'>
-                        <h2 className='locationName'>{logGoodId.title}</h2>
-                        <h3 className='location'>{logGoodId.location}</h3>
+                        <h2 className='locationName'>{logementGoodId.title}</h2>
+                        <h3 className='location'>{logementGoodId.location}</h3>
                     </div>
-                    <Tag />
+                    <Tag idLogement={logementGoodId}/>
                 </div>
                 <div className='containerProfileRaiting'>
                     <div className='profile'>
-                        <h3 className='profileName' alt="pictures">{logGoodId.host.name}</h3>
+                        <h3 className='profileName' alt="pictures">{logementGoodId.host.name}</h3>
                         <PP />
                     </div>
-                    <Rating nbrStars={logGoodId.rating}/>
+                    <Rating nbrStars={logementGoodId.rating}/>
                 </div>
             </div>
             <div className='cardsDescription'>
-                <CardDescription title="Description" text={logGoodId.description}/>
-                <CardDescription title="Equipements" text={logGoodId.equipments}/>
+                <CardDescription title="Description" text={logementGoodId.description}/>
+                <CardDescription title="Equipements" text={logementGoodId.equipments}/>
             </div>
                 
         </div>
