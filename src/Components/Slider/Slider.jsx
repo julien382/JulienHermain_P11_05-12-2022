@@ -1,16 +1,11 @@
 import './Slider.css'
-import data from '../../data/data.json'
-import { useParams } from 'react-router-dom'
 import React, { useState } from 'react'
 
 
-const Slider = () => {
-    const {id} = useParams()
-
-    const pictures = data.find(el => el.id === id).pictures
+const Slider = ({idLogement}) => {
 
     const [currentPicture, setCurrentPicture] = useState(0)
-    const length = pictures.length
+    const length = idLogement.length
 
     function nextSlide() {
         setCurrentPicture(currentPicture === length - 1 ? 0 : currentPicture + 1)
@@ -22,7 +17,7 @@ const Slider = () => {
 
     return (
         <div className='Slider'>
-            {pictures.map((picture, index) => (
+            {idLogement.map((picture, index) => (
                 <div className={`slide ${index === currentPicture ? "active" : ""}`} key={index}>             
                     <img src={picture} alt="intèrieur du logement" className="slider__img" />                  
                 </div>
