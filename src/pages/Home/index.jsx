@@ -3,6 +3,8 @@ import Card from '../../Components/Card/Card.jsx'
 import montagne from "../../assets/montagne.png"
 
 const Home = () => {
+
+    document.title = "Kasa"
     return (
         <div>
             <Banner img={montagne} title="Chez vous, partout et ailleurs"/>

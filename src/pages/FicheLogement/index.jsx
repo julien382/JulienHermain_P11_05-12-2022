@@ -10,10 +10,12 @@ import { useParams } from 'react-router-dom'
 
 const FicheLogement = () => {
     const {id} = useParams()
-
+    // si l'id n'ai pas trouvé, page error
+    
     const logementGoodId = data.find(logement => logement.id === id)
-
-
+    
+    document.title += " - " + logementGoodId.title 
+    
     return (
         <div className='ficheLogement'>
 

@@ -11,23 +11,21 @@ const CardDescription = ({title, text}) => {
     }
 
 
-
     return (
         <div className='cardDescription'>
             <div className='blocCardDescriptionTitle'>
                 <h2 className='cardDescriptionTitle'>{title}</h2>
-
-                {isOpen &&
-                
-                    <div className='blocCardDescriptionTexte'>
-                        <p className='cardDescriptionTexte'>{text}</p>
-                    </div>
-
-                }
-
                 <img className={isOpen ? "arrow rotateArrow" : "arrow" } onClick={handleClick} src={arrow} alt='arrow'></img>
-
             </div>
+
+            {isOpen &&
+            
+                <div className='blocCardDescriptionTexte'>
+                    <p className='cardDescriptionTexte'>{text}</p>
+                </div>
+
+            }
+
         </div>
     )
 }

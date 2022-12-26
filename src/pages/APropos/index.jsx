@@ -5,6 +5,9 @@ import CardDescription from '../../Components/CardDescription/CardDescription'
 import aboutData from '../../data/aboutData.json'
 
 const APropos = () => {
+
+    document.title = "Kasa - A Propos"
+    
     return (
         <div className='pageAPropos'>
             <Banner img={montagneNeige}/>

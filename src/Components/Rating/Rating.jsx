@@ -1,16 +1,12 @@
 import './Rating.css'
-import star from "../../assets/star.svg"
-import starColor from "../../assets/starFull.svg"
+import Star from "../Star/Star"
 
 const Rating = (nbrStars) => {
-
-    const starEmpty = <img className='star' src={star} alt="Etoile vide" />;
-    const starFull = <img className='star' src={starColor} alt="Etoile complete" />;
       
     const starsArray = [];
 
     for (let i = 0; i < 5; i++) {
-        i < nbrStars.nbrStars ? starsArray.push(starFull) : starsArray.push(starEmpty);
+        i < nbrStars.nbrStars ? starsArray.push(<Star key={i}/>) : starsArray.push(<Star key={i} isEmpty/>);
     }
 
     return (
