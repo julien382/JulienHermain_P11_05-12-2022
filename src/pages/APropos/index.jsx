@@ -16,7 +16,7 @@ const APropos = () => {
 
                 {aboutData.map((dataDescription, i) => (
 
-                    <CardDescription type="about" key={i} title={dataDescription.title} text={dataDescription.text}/>
+                    <CardDescription type="Paragraphe" key={i} title={dataDescription.title} text={dataDescription.text}/>
 
                 ))}
             </div>
