@@ -21,7 +21,11 @@ const CardDescription = ({title, text}) => {
             {isOpen &&
             
                 <div className='blocCardDescriptionTexte'>
-                    <p className='cardDescriptionTexte'>{text}</p>
+                    <ul>
+                        {text.map((item, i) => (
+                            <li className='cardDescriptionTexte' key={i}>{item}</li>
+                        ))}
+                     </ul>
                 </div>
 
             }
