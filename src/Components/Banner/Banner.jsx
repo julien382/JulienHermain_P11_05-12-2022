@@ -1,8 +1,9 @@
 import './Banner.css'
 
 const Banner = ({img, title, type}) => {
+    console.log(type);
     return (
-        <div className={type === "about" ? "banner" : "banner bannerAbout" }>
+        <div className={type === "about" ? "banner bannerAbout" : "banner"}>
             <img src={img} alt='bannerImage' className='bannerImage' />
             <h1 className="bannerTitle">{title}</h1>
         </div>

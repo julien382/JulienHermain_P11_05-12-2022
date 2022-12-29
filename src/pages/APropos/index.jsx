@@ -10,7 +10,7 @@ const APropos = () => {
     
     return (
         <div className='pageAPropos'>
-            <Banner img={montagneNeige}/>
+            <Banner type="about" img={montagneNeige}/>
 
             <div className='aProposCardsDescription'> 
 
