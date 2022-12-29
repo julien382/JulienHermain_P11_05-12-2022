@@ -1,8 +1,8 @@
 import './Banner.css'
 
-const Banner = ({img, title}) => {
+const Banner = ({img, title, type}) => {
     return (
-        <div className='banner'>
+        <div className={type === "about" ? "banner" : "banner bannerAbout" }>
             <img src={img} alt='bannerImage' className='bannerImage' />
             <h1 className="bannerTitle">{title}</h1>
         </div>
