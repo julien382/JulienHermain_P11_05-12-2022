@@ -25,6 +25,10 @@
     margin-bottom: 169px;
 }
 
+.errorBackHome > p{
+    text-decoration : underline;
+}
+
 @media only screen and (max-width: 680px)
 {
     /* --- Error 404 --- */
