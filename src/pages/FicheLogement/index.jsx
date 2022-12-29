@@ -38,8 +38,8 @@ const FicheLogement = () => {
                 </div>
             </div>
             <div className='cardsDescription'>
-                <CardDescription title="Description" text={logementGoodId.description}/>
-                <CardDescription title="Equipements" text={logementGoodId.equipments}/>
+                <CardDescription type="Paragraphe" title="Description" text={logementGoodId.description}/>
+                <CardDescription type="Liste"title="Equipements" text={logementGoodId.equipments}/>
             </div>
                 
         </div>

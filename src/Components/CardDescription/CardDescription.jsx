@@ -2,11 +2,12 @@ import './CardDescription.css'
 import arrow from "../../assets/arrow.svg"
 import { useState } from 'react'
 
-const CardDescription = ({title, text}) => {
+const CardDescription = ({title, text, type}) => {
 
     const [isOpen, setIsOpen] = useState(false)  
 
-    const handleClick = () => {
+    const handleClick =
+     () => {
         setIsOpen(!isOpen)
     }
 
@@ -21,11 +22,13 @@ const CardDescription = ({title, text}) => {
             {isOpen &&
             
                 <div className='blocCardDescriptionTexte'>
-                    <ul>
-                        {text.map((item, i) => (
-                            <li className='cardDescriptionTexte' key={i}>{item}</li>
-                        ))}
-                     </ul>
+                        {type === "Paragraphe" ? <p className='cardDescriptionTexte'>{text}</p> :
+                            <ul>
+                                {text.map((item, i) => (
+                                    <li className='cardDescriptionTexte' key={i}>{item}</li>
+                                ))}
+                            </ul>
+                        }
                 </div>
 
             }
