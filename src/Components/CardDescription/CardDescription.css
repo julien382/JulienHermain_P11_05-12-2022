@@ -57,11 +57,10 @@
     }
     
     .blocCardDescriptionTexte{
-        padding-top: 8px;
+        padding: 10px;
     }
     
     .cardDescriptionTexte{
-        padding: 10px;
         font-size: 12px;
     }
 
