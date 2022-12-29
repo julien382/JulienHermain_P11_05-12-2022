@@ -7,7 +7,7 @@ const Star = ({isEmpty}) => {
     return (
 
         <img 
-            className={isEmpty ? "star" : ""} 
+            className={isEmpty ? "star" : "starFull"} 
             src={isEmpty ? star : starColor} 
             alt={isEmpty ? "Etoile vide" : "Etoile complete"}
         />
