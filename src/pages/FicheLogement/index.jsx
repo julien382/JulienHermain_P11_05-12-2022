@@ -31,7 +31,7 @@ const FicheLogement = () => {
                 </div>
                 <div className='containerProfileRaiting'>
                     <div className='profile'>
-                        <h3 className='profileName' alt="pictures">{logementGoodId.host.name}</h3>
+                        <h3 className='profileName' alt="pictures">{logementGoodId.host.name.replace(' ', '\n')}</h3>
                         <PP idLogement={logementGoodId}/>
                     </div>
                     <Rating nbrStars={logementGoodId.rating}/>
