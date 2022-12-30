@@ -6,6 +6,7 @@ const Slider = ({idLogement}) => {
 
     const [currentPicture, setCurrentPicture] = useState(0)
     const length = idLogement.length
+    console.log(idLogement);
 
     function nextSlide() {
         setCurrentPicture(currentPicture === length - 1 ? 0 : currentPicture + 1)
