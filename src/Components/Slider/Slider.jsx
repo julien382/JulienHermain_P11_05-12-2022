@@ -18,8 +18,10 @@ const Slider = ({idLogement}) => {
     return (
         <div className='Slider'>
             {idLogement.map((picture, index) => (
-                <div className={`slide ${index === currentPicture ? "active" : ""}`} key={index}>             
-                    <img src={picture} alt="intèrieur du logement" className="slider__img" />                  
+                <div className={index} key={index}> 
+                    {index === currentPicture && (           
+                        <img src={picture} alt="intèrieur du logement" className="slider__img" />    
+                    )}              
                 </div>
             ))}
             <span className='compteur'>
