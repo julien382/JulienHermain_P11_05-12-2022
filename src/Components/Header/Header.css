@@ -5,15 +5,3 @@
 	align-items: center;
 }
 
-@media only screen and (max-width: 680px)
-{
-    /* --- Header --- */
-    .logo{
-        width: 120px;
-    }
-
-    .navBar ul li a{
-        font-size: 12px;
-        margin-left: 10px;
-    }
-}
