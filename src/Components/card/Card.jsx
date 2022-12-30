@@ -10,6 +10,7 @@ const Card = () => {
                     <article>
                         <div className="cardImage">
                             <img src={logement.cover} alt="logement" />
+                            <span className="filtre"></span>
                         </div>
                         <h2  className='cardTitle'>{logement.title}</h2>
                     </article>
