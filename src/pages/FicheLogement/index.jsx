@@ -10,16 +10,7 @@ import {Link} from "react-router-dom"
 
 const FicheLogement = () => {
     const {id} = useParams()
-    /*console.log(id);
-    const test = data.logement.id;
-    console.log(test);*/
     // si l'id n'ai pas trouvé, page error
-    /*if (data.logement.id === id) {
-        console.log("good");
-    }
-    else{
-        console.log("bad");
-    }*/
     const logementGoodId = data.find(logement => logement.id === id)
     
     document.title += " - " + logementGoodId.title 
