@@ -10,7 +10,7 @@
     object-fit: cover;
     background-color: #FF6060;
     border-radius: 25px;
-    animation: fade 0.8s;
+    animation: fade 0.3s;
 }
 
 .slider__arrowLeft, .slider__arrowRight{
