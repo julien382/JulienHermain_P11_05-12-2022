@@ -6,7 +6,7 @@ import Slider from '../../Components/Slider/Slider'
 import PP from '../../Components/PP/PP'
 import data from '../../data/data.json'
 import { useParams } from 'react-router-dom'
-
+import {Link} from "react-router-dom"
 
 const FicheLogement = () => {
     const {id} = useParams()
@@ -24,8 +24,14 @@ const FicheLogement = () => {
     
     document.title += " - " + logementGoodId.title 
     
-    
 
+    if (data.map(logement => logement.id === id)){
+        console.log("good");
+        <Link to="/Error">Error404</Link>}
+        else{
+            console.log("bad");
+            <Link to="*">Error404</Link>
+        }
     
     return (
         <div className='ficheLogement'>
