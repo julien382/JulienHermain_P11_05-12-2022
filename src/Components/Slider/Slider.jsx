@@ -5,24 +5,26 @@ import React, { useState } from 'react'
 const Slider = ({idLogement}) => {
 
     const [currentPicture, setCurrentPicture] = useState(0)
+    const [from, setFrom] = useState(null)
+
     const length = idLogement.length
     console.log(idLogement);
 
     function nextSlide() {
         setCurrentPicture(currentPicture === length - 1 ? 0 : currentPicture + 1)
+        setFrom('left')
     }
 
     function prevSlide() {
         setCurrentPicture(currentPicture === 0 ? length - 1 : currentPicture - 1)
+        setFrom('right')
     }
 
     return (
         <div className='Slider'>
             {idLogement.map((picture, index) => (
-                <div className={index} key={index}> 
-                    {index === currentPicture && (           
-                        <img src={picture} alt="intèrieur du logement" className="slider__img" />    
-                    )}              
+                <div className={`slide ${index === currentPicture ? `active ${from}` : ""}`} key={index}> 
+                    <img src={picture} alt="intèrieur du logement" className="slider__img" />    
                 </div>
             ))}
             <span className='compteur'>

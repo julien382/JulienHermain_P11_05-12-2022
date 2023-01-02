@@ -1,7 +1,10 @@
 .Slider{
     position: relative;
     width: 100%;
+    height: 415px;
     margin-top: 25px;
+    overflow: hidden;
+    border-radius: 25px;
 }  
 
 .slider__img{
@@ -18,6 +21,7 @@
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+    z-index: 2;
 }
 
 .slider__arrowLeft{
@@ -28,20 +32,52 @@
     right: 24px;
 }
 
+.slide{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.active{
+    z-index: 1;
+}
+
+.left{
+    animation: fromLeft 1s;
+    animation-fill-mode: forwards;
+}
+
+.right{
+    animation: fromRight 1s;
+    animation-fill-mode: forwards;
+}
+
 .compteur{
     position: absolute;
     bottom: 24px;
     left: 50%;
     transform: translateX(50%);
     color: white;
+    z-index: 2;
 }
 
-@keyframes fade{
+@keyframes fromLeft{
     from {
-        opacity: 0;
+        left: -100%;
     }
     to {
-        opacity: 1;
+        left: 0;
+    }
+}
+
+@keyframes fromRight{
+    from {
+        right: -100%;
+    }
+    to {
+        right: 0;
     }
 }
 /*
