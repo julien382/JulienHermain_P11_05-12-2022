@@ -16,7 +16,7 @@
 }
 
 .navBar ul li a.active{
-    color: blue;
+    text-decoration: underline;
 
 }
 
