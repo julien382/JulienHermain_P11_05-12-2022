@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 
 const Slider = ({idLogement}) => {
 
+    // Définir l'état local avec l'image actuellement affichée et le tableau d'images
     const [currentPicture, setCurrentPicture] = useState(0)
     const [from, setFrom] = useState(null)
 

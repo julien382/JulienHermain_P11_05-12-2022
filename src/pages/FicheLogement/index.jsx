@@ -3,6 +3,7 @@ import CardDescription from '../../Components/CardDescription/CardDescription'
 import Tag from '../../Components/Tag/Tag'
 import Rating from '../../Components/Rating/Rating'
 import Slider from '../../Components/Slider/Slider'
+import Carrousel from '../../Components/Carrousel/Carrousel'
 import PP from '../../Components/PP/PP'
 import data from '../../data/data.json'
 import { useParams, useNavigate } from 'react-router-dom'
@@ -42,6 +43,7 @@ const FicheLogement = () => {
         <div className='ficheLogement'>
 
             <Slider idLogement={logementGoodId.pictures} allPictures={logementGoodId.pictures}/>
+            <Carrousel idLogement={logementGoodId.pictures}/>
             <div className='containerInformation'>    
                 <div className='containerLocationTag'>
                     <div className='containerLocation'>
