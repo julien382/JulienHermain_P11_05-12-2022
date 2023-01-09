@@ -31,8 +31,9 @@ const FicheLogement = () => {
 
     //split Name
     const formatName = (name) => {
-        const items = name.split(' ')
-        items.splice(1, 0, <br/>)
+        const words = name.split(" ");
+        const items = words.map((word, i) => <div key={i}>{word}</div>);
+
         return items
     }
     
