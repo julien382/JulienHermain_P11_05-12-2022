@@ -1,5 +1,7 @@
 Kasa est un site de location d’appartements entre particuliers, avec plus de 500 annonces postées chaque jour, ils font partie des leaders de la location d’appartements en France.
 
+Le projet utilise React.
+
 "npm run start" pour lancer le projet
 "npm run deploy" pour déployer le site sur gitHub pages
 
