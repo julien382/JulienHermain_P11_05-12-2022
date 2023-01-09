@@ -26,6 +26,7 @@ const FicheLogement = () => {
         return null
     }
 
+    // document title
     document.title += " - " + logementGoodId?.title 
 
     //split Name
