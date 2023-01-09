@@ -7,21 +7,18 @@ import PP from '../../Components/PP/PP'
 import data from '../../data/data.json'
 import { useParams, useNavigate } from 'react-router-dom'
 import { useEffect } from 'react'
-//import { useState } from 'react'
 
 const FicheLogement = () => {
     const {id} = useParams()
-    //const [logement] = useState(undefined)
+
     const navigate = useNavigate();
 
     useEffect(() => {
-
         // si l'id n'ai pas trouvé, page error
         if (data.find(logement => logement.id === id) === undefined){
-            console.log("bad");
             navigate('/Error');
         } 
-    }, [id])
+    }, [id, navigate])
     
     const logementGoodId = data.find(logement => logement.id === id)
     
@@ -31,7 +28,6 @@ const FicheLogement = () => {
 
     document.title += " - " + logementGoodId?.title 
 
-
     //split Name
     const formatName = (name) => {
         const items = name.split(' ')
@@ -39,7 +35,6 @@ const FicheLogement = () => {
         return items
     }
     
-
     
     return (
         <div className='ficheLogement'>
