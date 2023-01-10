@@ -1,43 +1,57 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from 'react';
+import './Carrousel.css';
 
 const Carrousel = ({idLogement}) => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
+  const images = idLogement
 
-  // Définir l'état local avec l'image actuellement affichée et le tableau d'images
-  const [currentImage, setCurrentImage] = useState(0);
-  const [images] = useState(idLogement);
-
-  const length = idLogement.length
-
-  // Méthode de gestion de clic pour changer l'image affichée
-  function handleClick(direction) {
-    if (direction === "prev") {
-      // Si l'image actuelle est la première, passer à la dernière
-      if (currentImage === 0) {
-        setCurrentImage(length - 1);
-      } else {
-        setCurrentImage(currentImage - 1);
-      }
-    } else if (direction === "next") {
-      // Si l'image actuelle est la dernière, passer à la première
-      if (currentImage === length - 1) {
-        setCurrentImage(0);
-      } else {
-        setCurrentImage(currentImage + 1);
-      }
+  useEffect(() => {
+    if (isAnimating) {
+      const timeout = setTimeout(() => {
+        setIsAnimating(false);
+      }, 500);
+      return () => clearTimeout(timeout);
     }
-  }
+  }, [isAnimating]);
 
+  const handlePrevClick = () => {
+    if (!isAnimating) {
+      setIsAnimating(true);
+      let newIndex = activeIndex - 1;
+      if (newIndex < 0) {
+        newIndex = images.length - 1;
+      }
+      setActiveIndex(newIndex);
+    }
+  };
+
+  const handleNextClick = () => {
+    if (!isAnimating) {
+      setIsAnimating(true);
+      let newIndex = activeIndex + 1;
+      if (newIndex >= images.length) {
+        newIndex = 0;
+      }
+      setActiveIndex(newIndex);
+    }
+  };
 
   return (
     <div className="carousel">
-      {/* Bouton "Précédent" */}
-      <button onClick={() => handleClick("prev")}>Précédent</button>
-      {/* Image actuelle */}
-      <img src={images[currentImage]} alt="intèrieur du logement" />
-      {/* Bouton "Suivant" */}
-      <button onClick={() => handleClick("next")}>Suivant</button>
+      {images.map((image, index) => (
+        <div
+          key={image}
+          className={`carousel-item ${index === activeIndex ? 'carousel-active' : ''}`}
+          onAnimationEnd={() => setIsAnimating(false)}
+        >
+          <img src={image} alt={`Logement ${index + 1}`} />
+        </div>
+      ))}
+      <button className="carousel-prev" onClick={handlePrevClick}>&#10094;</button>
+      <button className="carousel-next" onClick={handleNextClick}>&#10095;</button>
     </div>
   );
 }
 
-export default Carrousel
+export default Carrousel;

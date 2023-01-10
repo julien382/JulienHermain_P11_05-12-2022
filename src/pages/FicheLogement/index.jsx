@@ -43,7 +43,6 @@ const FicheLogement = () => {
         <div className='ficheLogement'>
 
             <Slider idLogement={logementGoodId.pictures} allPictures={logementGoodId.pictures}/>
-            <Carrousel idLogement={logementGoodId.pictures}/>
             <div className='containerInformation'>    
                 <div className='containerLocationTag'>
                     <div className='containerLocation'>
@@ -64,6 +63,7 @@ const FicheLogement = () => {
                 <CardDescription type="Paragraphe" title="Description" text={logementGoodId.description}/>
                 <CardDescription type="Liste"title="Equipements" text={logementGoodId.equipments}/>
             </div>
+            <Carrousel idLogement={logementGoodId.pictures}/>
                 
         </div>
     )
