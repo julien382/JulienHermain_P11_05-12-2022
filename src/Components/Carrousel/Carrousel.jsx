@@ -1,44 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState/*, useEffect */} from 'react';
 import './Carrousel.css';
 
 const Carrousel = ({allPictures}) => {
   // Définir l'état local avec l'image actuellement affichée et le tableau d'images
   const [activeIndex, setActiveIndex] = useState(0);
-  const [isAnimating, setIsAnimating] = useState(false);
-
   const length = allPictures.length
 
-  useEffect(() => {
-    if (isAnimating) {
-      const timeout = setTimeout(() => {
-        setIsAnimating(false);
-      }, 500);
-      return () => clearTimeout(timeout);
-    }
-  }, [isAnimating]);
-  
+  function handleNextClick() {
+    setActiveIndex(activeIndex === length - 1 ? 0 : activeIndex + 1)
+  }
 
-  const handlePrevClick = () => {
-    if (!isAnimating) {
-      setIsAnimating(true);
-      let newIndex = activeIndex - 1;
-      if (newIndex < 0) {
-        newIndex = length - 1;
-      }
-      setActiveIndex(newIndex);
-    }
-  };
-
-  const handleNextClick = () => {
-    if (!isAnimating) {
-      setIsAnimating(true);
-      let newIndex = activeIndex + 1;
-      if (newIndex >= length) {
-        newIndex = 0;
-      }
-      setActiveIndex(newIndex);
-    }
-  };
+  function handlePrevClick() {
+    setActiveIndex(activeIndex === 0 ? length - 1 : activeIndex - 1)
+  }
 
   return (
     <div className="carousel">
@@ -47,7 +21,6 @@ const Carrousel = ({allPictures}) => {
         <div
         key={image}
         className={`carousel-item ${index === activeIndex ? 'carousel-active' : ''} ${index < activeIndex ? 'prev' : ''} ${index > activeIndex ? 'next' : ''}`}
-        onAnimationEnd={() => setIsAnimating(false)}
         >
           <img src={image} alt={`Logement ${index + 1}`} />
         </div>
