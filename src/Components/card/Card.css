@@ -5,6 +5,9 @@
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    margin-top: 43px;
 }
 
 .card{
